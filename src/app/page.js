@@ -49,7 +49,10 @@ export default function Home() {
               </Link>
             </li>
             <li>
-              <div className="event-card border border-black px-4 py-2 flex items-center space-x-4 rounded hover:border-purple-600 hover:text-sky-600">
+              <Link
+                href="/reviews/event"
+                className="event-card border border-black px-4 py-2 flex items-center space-x-4 rounded hover:border-purple-600 hover:text-sky-600"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="32"
@@ -63,7 +66,7 @@ export default function Home() {
                   />
                 </svg>
                 <span>Event Reviews</span>
-              </div>
+              </Link>
             </li>
           </ul>
         </div>

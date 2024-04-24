@@ -13,7 +13,7 @@ const formSchema = z.object({
   howCanWeImprove: z.string().min(2).max(200),
   contentQuality: z.string().min(3).max(200),
   yourName: z.string().min(2).max(200),
-  videoTitle: z.string().min(2).max(200),
+  eventName: z.string().min(2).max(200),
 });
 
 function YouTubeReview() {
@@ -47,11 +47,11 @@ function YouTubeReview() {
           </div>
           <div>
             <FormInput
-              label="Enter YouTube Video Title"
-              name="videoTitle"
-              register={register("videoTitle")}
-              error={errors.videoTitle}
-              placeholder="Video Title"
+              label="Enter Event Name"
+              name="eventName"
+              register={register("eventName")}
+              error={errors.eventName}
+              placeholder="Event Name"
               required
             />
           </div>

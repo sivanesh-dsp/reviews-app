@@ -1,15 +1,20 @@
 import React from "react";
 import PropTypes from "prop-types";
+import Label from "./Label";
 
 const TextArea = ({
   name,
   placeholder = "Enter information briefly",
   register,
   error,
+  required,
+  label,
 }) => {
   return (
     <div className="space-y-4">
+      <Label id={name} text={label} required />
       <textarea
+        id={name}
         name={name}
         placeholder={placeholder}
         {...register}
@@ -25,6 +30,8 @@ TextArea.propTypes = {
   placeholder: PropTypes.string,
   register: PropTypes.object,
   error: PropTypes.object,
+  required: PropTypes.bool,
+  label: PropTypes.string,
 };
 
 export default TextArea;
