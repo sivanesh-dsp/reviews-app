@@ -20,7 +20,7 @@ function Navbar({ appTitle }) {
           />
         </svg>
       </button>
-      <h3 className="font-semibold uppercase text-xl">{appTitle}</h3>
+      <h3 className="font-semibold text-xl">{appTitle}</h3>
     </header>
   );
 }
