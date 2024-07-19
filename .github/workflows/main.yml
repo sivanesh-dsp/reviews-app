@@ -58,7 +58,7 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: myfirstcontainer69.azurecr.io/${{ secrets.AZURE_CONTAINER_USERNAME }}/myFirstCOntainer69/reviews-app:${{ github.sha }}
+          tags: myfirstcontainer69.azurecr.io/${{ secrets.AZURE_CONTAINER_USERNAME }}/reviews-app:${{ github.sha }}
           file: ./Dockerfile
 
   deploy:
