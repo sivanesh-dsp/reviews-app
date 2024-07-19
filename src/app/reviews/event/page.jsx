@@ -59,6 +59,17 @@ function YouTubeReview() {
               />
             </div>
             <div>
+              <FormInput
+                label="Enter Event Date"
+                name="eventDate"
+                type="date"
+                register={register("eventDate")}
+                error={errors.eventDate}
+                placeholder="Event Date"
+                required
+              />
+            </div>
+            <div>
               <TextArea
                 label="What do you think about the content?"
                 name="contentQuality"
